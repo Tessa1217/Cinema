@@ -2,7 +2,10 @@ package co.my.cinema;
 
 import java.util.List;
 
+import co.my.cinema.dto.MemberVO;
 import co.my.cinema.dto.SeatVO;
+import co.my.cinema.service.MemberService;
+import co.my.cinema.serviceImpl.MemberServiceImpl;
 import co.my.cinema.serviceImpl.SeatServiceImpl;
 
 public class App {
@@ -69,6 +72,15 @@ public class App {
 
 		}
 		System.out.println("\n===================================================");
+
+		MemberService ms = new MemberServiceImpl();
+		MemberVO vo = new MemberVO();
+		vo.setMemberId("user1");
+		vo.setMemberPwd("user1234");
+		vo.setMemberName("권유진");
+		vo.setMemberPhone("010-9717-9999");
+		ms.signUp(vo);
+
 	}
 
 }

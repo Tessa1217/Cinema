@@ -7,7 +7,7 @@ import lombok.Setter;
 @Setter
 public class RoomVO {
 
-	String theaterName;
-	int roomNo;
+	private String theaterName;
+	private int roomNo;
 
 }

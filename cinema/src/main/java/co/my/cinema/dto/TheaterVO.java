@@ -6,7 +6,7 @@ import lombok.Setter;
 @Getter
 @Setter
 public class TheaterVO {
-	String theaterName;
-	String theaterLocation;
+	private String theaterName;
+	private String theaterLocation;
 
 }

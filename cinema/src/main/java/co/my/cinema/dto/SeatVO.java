@@ -7,9 +7,9 @@ import lombok.Setter;
 @Setter
 public class SeatVO {
 
-	String seatNo;
-	int roomNo;
-	String seatReserve;
-	String paymentNo;
+	private String seatNo;
+	private int roomNo;
+	private String seatReserve;
+	private String paymentNo;
 
 }
